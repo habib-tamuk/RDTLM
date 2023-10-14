@@ -45,12 +45,14 @@ git clone https://github.com/habib-tamuk/RDTLM.git
 
 ```
 
-To run the program, first install all required libraries by running the following command:
-
+- To run the program, first install all required software and toolbox. Then do the following instructions:
+    - Run the Data_Set_Preparation.m program in MATLAB for dataset preprocessing
 
 ## Authors
 
-Md Habibur Rahman, Farhana Islam, Md Selim Hossain, Avdesh Mishra, Salem A. Alyami, Mohammad Ali Moni. For any issue please contact Md Habibur Rahman, habibur0001@bdu.ac.bd 
+Md Habibur Rahman, Farhana Islam, Md Selim Hossain, Avdesh Mishra, Salem A. Alyami, Mohammad Ali Moni. 
+
+For any issue please contact Md Habibur Rahman, habibur0001@bdu.ac.bd 
 
 ## References
 
