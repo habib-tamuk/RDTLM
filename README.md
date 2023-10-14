@@ -15,9 +15,15 @@ RDTLM: Robust Deep Transfer Learning Model for Automated Diagnosis of COVID-19 U
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Datasets
-The dataset can be found in the **COVID-19 Radiography Database** directory. The dataset is collected from [1].
-
-To download the dataset directly from Kaggle, visit: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
++ RDTLM implementation dataset
+   + The dataset can be found in the **COVID-19 Radiography Database** directory.
+   + The dataset is collected from [1].
+   + To download the dataset directly from Kaggle, visit: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
++ Model validation datasets
+   + The datasets can be found in the **Chest X-Ray Images (Pneumonia)** and **SARS-COV-2 Ct-Scan Dataset** directory.
+   + The datasets are collected from [2] and [3].
+   + Download link for **Chest X-Ray Images (Pneumonia)**: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+   + Download link for **SARS-COV-2 Ct-Scan Dataset**: https://www.kaggle.com/datasets/plameneduardo/sarscov2-ctscan-dataset
 
 ### Prerequisites
 
