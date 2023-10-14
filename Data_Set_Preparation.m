@@ -14,7 +14,7 @@ for i=1:numel(I)
   %K{i} = rgb2gray(J{i}); %Used for RGB Image
   L{i} = imresize(J{i}, [256 256]);
   M{i} = medfilt2(L{i});
-  N{i} = water_shed(M{i}); 
+  N{i} = kmeans(M{i}); 
   path ='C:\Users\Lenovo\Downloads\Covid-19\Matlab\Image\Healthy\Healthy';
   dir(path);
   imwrite(N{i},[path, num2str(fnum(i)) ext]);
@@ -36,7 +36,7 @@ for i=1:numel(I)
   %K{i} = rgb2gray(J{i}); %Used for RGB Image
   L{i} = imresize(J{i}, [256 256]);
   M{i} = medfilt2(L{i});
-  N{i} = water_shed(M{i}); 
+  N{i} = kmeans(M{i}); 
   path ='C:\Users\Lenovo\Downloads\Covid-19\Matlab\Image\COVID\COVID';
   dir(path);
   imwrite(N{i},[path, num2str(fnum(i)) ext]);
@@ -61,7 +61,7 @@ for i=1:numel(I)
   M{i} = imfilter(L{i}, meanFilter);        %Mean Filter
   
   %M{i} = medfilt2(L{i});
-  N{i} = water_shed(M{i}); 
+  N{i} = kmeans(M{i}); 
   path ='C:\Users\Lenovo\Downloads\Covid-19\Matlab\Image\Pneumonia\Pneumonia';
   dir(path);
   imwrite(N{i},[path, num2str(fnum(i)) ext]);
