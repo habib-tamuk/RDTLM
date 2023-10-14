@@ -4,8 +4,8 @@ RDTLM: Robust Deep Transfer Learning Model for Automated Diagnosis of COVID-19 U
 
 # Table of Content
 *	[Getting Started](#getting-started)
-*	[Datasets](#datasets)
-*	[Prerequisites](#prerequisites)
+    *	[Datasets](#datasets)
+    *	[Prerequisites](#prerequisites)
 *	[Download and install code](#download-and-install-code)
 *	[Authors](#authors)
 *	[References](#references)
@@ -15,7 +15,7 @@ RDTLM: Robust Deep Transfer Learning Model for Automated Diagnosis of COVID-19 U
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Datasets
-The dataset can be found in the COVID-19 Radiography Database directory. The dataset is collected from [1].
+The dataset can be found in the **COVID-19 Radiography Database** directory. The dataset is collected from [1].
 
 To download the dataset directly from Kaggle, visit: https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
 
@@ -46,20 +46,26 @@ git clone https://github.com/habib-tamuk/RDTLM.git
 ```
 
 - To run the program, first install all required software and toolbox. Then do the following instructions:
-    - Download the COVID-19 Radiography Database.
+    - Download the [COVID-19 Radiography Database.](#datasets)
     - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**.
     - To measure the enhancement performance run the **Preprocessing.m** program in MATLAB.
     - To measure the enhancement performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
     - To select the value of K for K-means clustering run **Elbow Method for K selection.py** in Python.
     - Now, run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation.
     - To extract the features(DarkNet-19), select the features(mRMR) and classify(SVM) the patients, run **Darknet19.m** in MATLAB.
+- To validate the RDTLM model with external datasets, follow the below instructions:
+    - Download the **Chest X-Ray Images (Pneumonia)** and **SARS-COV-2 Ct-Scan Dataset** datasets from [2] and [3].
+    - Run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation for each dataset.
+    - Now, run the **RDTLM_Validation.m** program in MATLAB with datasets [2] and [3] individually. 
 
 ## Authors
 
 Md Habibur Rahman, Farhana Islam, Md Selim Hossain, Avdesh Mishra, Salem A. Alyami, Mohammad Ali Moni. 
 
-For any issue please contact Md Habibur Rahman, habibur0001@bdu.ac.bd 
+For any issue please contact Mohammad Ali Moni, m.moni@uq.edu.au 
 
 ## References
 
 1. Rahman, T., Khandakar, A., Qiblawey, Y., Tahir, A., Kiranyaz, S., Kashem, S.B.A., Islam, M.T., Al Maadeed, S., Zughaier, S.M., Khan, M.S., and Chowdhury, M.E. Exploring the effect of image enhancement techniques on COVID-19 detection using chest X-ray images. Computers in biology and medicine, 2021, 132, 104319.
+2. Kermany, D., Zhang, K., & Goldbaum, M. (2018). Labeled optical coherence tomography (oct) and chest x-ray images for classification. Mendeley data, 2(2), 651.
+3. Soares, E., Angelov, P., Biaso, S., Cury, M., & Abe, D. (2023). A large multiclass dataset of CT scans for COVID-19 identification. Evolving Systems, 1-6.
