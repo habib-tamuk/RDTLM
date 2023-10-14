@@ -52,7 +52,7 @@ git clone https://github.com/habib-tamuk/RDTLM.git
 ```
 
 - To run the program, first install all required software and toolbox. Then do the following instructions:
-    - Download the [COVID-19 Radiography Database.](#datasets)
+    - Download the [COVID-19 Radiography Database](#datasets) from [1].
     - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**.
     - To measure the enhancement performance run the **Preprocessing.m** program in MATLAB.
     - To measure the enhancement performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
@@ -60,7 +60,7 @@ git clone https://github.com/habib-tamuk/RDTLM.git
     - Now, run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation.
     - To extract the features(DarkNet-19), select the features(mRMR) and classify(SVM) the patients, run **Darknet19.m** in MATLAB.
 - To validate the RDTLM model with external datasets, follow the below instructions:
-    - Download the **Chest X-Ray Images (Pneumonia)** and **SARS-COV-2 Ct-Scan Dataset** datasets from [2] and [3].
+    - Download the [Chest X-Ray Images (Pneumonia)](#datasets) and [SARS-COV-2 Ct-Scan Dataset](#datasets) datasets from [2] and [3].
     - Run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation for each dataset.
     - Now, run the **RDTLM_Validation.m** program in MATLAB with datasets [2] and [3] individually. 
 
