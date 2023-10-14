@@ -36,8 +36,8 @@ figure;
 bar(scores(idx));
 xlabel('Predictor rank');
 ylabel('Predictor importance score');
-MRMRfeaturesTrain = featuresTrain(:,idx(1:500));
-MRMRfeaturesTest = featuresTest(:,idx(1:500));
+MRMRfeaturesTrain = featuresTrain(:,idx(1:400));
+MRMRfeaturesTest = featuresTest(:,idx(1:400));
 
 %multiclass support vector machine (SVM) applied to fit with label and features using fitcecoc
 %fitcecoc Fit multiclass models for support vector machines or other classifiers
