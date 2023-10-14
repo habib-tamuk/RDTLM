@@ -46,13 +46,13 @@ git clone https://github.com/habib-tamuk/RDTLM.git
 ```
 
 - To run the program, first install all required software and toolbox. Then do the following instructions:
-    - Download the COVID-19 Radiography Database
-    - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**
+    - Download the COVID-19 Radiography Database.
+    - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**.
     - To measure the enhancement performance run the **Preprocessing.m** program in MATLAB.
     - To measure the enhancement performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
     - To select the value of K for K-means clustering run **Elbow Method for K selection.py** in Python.
     - Now, run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation.
-    - To extract the features using DarkNet-19, select the features using mRMR and detect the classification using SVM, run **Darknet19.m** in MATLAB.
+    - To extract the features(DarkNet-19), select the features(mRMR) and classify(SVM) the patients, run **Darknet19.m** in MATLAB.
 
 ## Authors
 
