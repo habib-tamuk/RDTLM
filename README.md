@@ -58,13 +58,14 @@ git clone https://github.com/habib-tamuk/RDTLM.git
     - To measure the enhancement performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
     - To select the value of K for K-means clustering run **Elbow Method for K selection.py** in Python.
     - Now, run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation.
-    - Finally to implement the RDTLM model, run **Darknet19.m** in MATLAB.
+    - Finally to implement the RDTLM model, run the **Darknet19.m** program in MATLAB.
     - The RDTLM model used DarkNet-19 to extract the features, and mRMR was used to select the features.
     - SVM was used for the classification.
 - To validate the RDTLM model with external datasets, follow the below instructions:
     - Download the [Chest X-Ray Images (Pneumonia)](#datasets) and [SARS-COV-2 Ct-Scan Dataset](#datasets) datasets from [2] and [3].
     - Run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation for each dataset.
-    - Now, run the **RDTLM_Validation.m** program in MATLAB with datasets [2] and [3] individually. 
+    - Now, run the **RDTLM_Validation.m** program in MATLAB with datasets [2] and [3] individually.
+- To test the model with individual images, run the **Test_with_individual_image.m** program in MATLAB.
 
 ## Authors
 
