@@ -4,7 +4,7 @@ RDTLM: Robust Deep Transfer Learning Model for Automated Diagnosis of COVID-19 U
 
 # Table of Content
 *	[Getting Started](#getting-started)
-*	[Datasets](#dataset)
+*	[Datasets](#datasets)
 *	[Prerequisites](#prerequisites)
 *	[Download and install code](#download-and-install-code)
 *	[Authors](#authors)
@@ -46,7 +46,7 @@ git clone https://github.com/habib-tamuk/RDTLM.git
 ```
 
 - To run the program, first install all required software and toolbox. Then do the following instructions:
-    - Download the [Dataset](#dataset)
+    - Download the COVID-19 Radiography Database
     - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**
     - Run the **Data_Set_Preparation.m** program in MATLAB for dataset preprocessing.
     - To measure the Preprocessing performance run the **Preprocessing_w_watershed_C.m** program in MATLAB.
