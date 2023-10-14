@@ -25,34 +25,6 @@ featuresTest = activations(net,augimdsTest,layer,'OutputAs','rows','ExecutionEnv
 YTrain = imdsTrain.Labels;
 YTest = imdsTest.Labels;
 %%
-%https://www.mathworks.com/help/deeplearning/ug/transfer-learning-using-alexnet.html
-
-layersTransfer = net.Layers(1:end-3);
-numClasses = numel(categories(imdsTrain.Labels));
-
-layers = [
-    layersTransfer
-    fullyConnectedLayer(numClasses,'WeightLearnRateFactor',20,'BiasLearnRateFactor',20)
-    softmaxLayer
-    classificationLayer];
-
-options = trainingOptions('sgdm', ...
-    'MiniBatchSize',10, ...
-    'MaxEpochs',6, ...
-    'InitialLearnRate',1e-4, ...
-    'Shuffle','every-epoch', ...
-    'ValidationData',augimdsTest, ...
-    'ValidationFrequency',3, ...
-    'Verbose',false, ...
-    'Plots','training-progress');
-
-netTransfer = trainNetwork(augimdsTrain,layers,options);
-
-[YPred,scores] = classify(netTransfer,augimdsTest);
-
-YTest = imdsTest.Labels;
-accuracy = mean(YPred == YTest);
-%%
 
 %multiclass support vector machine (SVM) applied to fit with label and features using fitcecoc
 %fitcecoc Fit multiclass models for support vector machines or other classifiers
@@ -144,11 +116,3 @@ avgError = (c5Error+h5Error+p5Error)/3;
 totalImage = sum(confMat, 'all');
 totalTestImage = countcats(YTest);
 totalTrainImage = countcats(YTrain);
-%%
-%Individual Image Test Purpose
-testImage = imread('C:\Users\Lenovo\Downloads\Covid-19\Matlab\Image\COVID\COVID2.png');
-%img = imresize(testImage, [227 227]);
-img = readAndPreprocessImage(testImage); 
-imageFeatures = activations(net, img, layer,'OutputAs','rows','ExecutionEnvironment','cpu');
-%label = predict(classifier.Trained{1,1}, imageFeatures); %for ensemple classifier
-label = predict(classifier, imageFeatures);
