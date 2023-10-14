@@ -58,9 +58,8 @@ for i=1:numel(I)
   %K{i} = rgb2gray(J{i}); %Used for RGB Image
   L{i} = imresize(J{i}, [256 256]);
   meanFilter = fspecial('average', [3 3]);    %Linear Spatial Filter, mean/average/box
-  M{i} = imfilter(L{i}, meanFilter);        %Mean Filter
-  
-  %M{i} = medfilt2(L{i});
+  %M{i} = imfilter(L{i}, meanFilter);        %Mean Filter
+  M{i} = medfilt2(L{i});
   N{i} = kmeans(M{i}); 
   path ='C:\Users\Lenovo\Downloads\Covid-19\Matlab\Image\Pneumonia\Pneumonia';
   dir(path);
