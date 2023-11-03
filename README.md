@@ -55,7 +55,7 @@ git clone https://github.com/habib-tamuk/RDTLM.git
     - Download the [COVID-19 Radiography Database](#datasets) from [1].
     - Rename the **Normal** folder as **Healthy** and **Viral Pneumonia** folder as **Pneumonia**.
     - To measure the enhancement performance run the **Preprocessing.m** program in MATLAB.
-    - To measure the enhancement performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
+    - To measure the clustering performance run the **Preprocessing_w_kmeans_C.m** program in MATLAB.
     - To select the value of K for K-means clustering run **Elbow Method for K selection.py** in Python.
     - Now, run the **Data_Set_Preparation.m** program in MATLAB for dataset preparation.
     - Finally to implement the RDTLM model, run the **Darknet19.m** program in MATLAB.
